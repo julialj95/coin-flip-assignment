@@ -5,7 +5,6 @@ function buttonClick(selectedCoin) {
 
 function flipCoin() {
   let randomNumber = Math.floor(Math.random() * 2) + 1;
-  console.log(randomNumber);
   if (randomNumber === 1) {
     return "Heads";
   } else {
@@ -33,7 +32,6 @@ function displayResults(selectedCoin, result) {
   thirdNewNode.setAttribute("id", "statement");
 
   if (selectedCoin === result) {
-    console.log("selectedCoin", selectedCoin, "result", result);
     thirdNewNode.innerHTML = "Good Guess!";
     div.appendChild(thirdNewNode);
   } else {
